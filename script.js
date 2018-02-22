@@ -14,12 +14,20 @@ function palindromeCheck() {
 	var word3 = word2.join("");
 
 	if (word3 === word){
+		document.getElementById("results").innerHTML = "It's an awesome palindrome!";
 		console.log("it's a palindrome");
 	}else {
+		document.getElementById("results").innerHTML = "This is no palindrome, so sad!";
 		console.log("no palindrome here");
 	};
 };
 
-console.log("test prefunction");
+document.getElementById("reset").onclick = function() {pageReset()};
+
+function pageReset() { 
+	document.getElementById("results").innerHTML = "";
+	document.getElementById("userWord").value = "";
 };
-console.log("test postfunction");
+
+
+};
