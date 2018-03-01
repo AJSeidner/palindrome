@@ -1,0 +1,35 @@
+body {
+	text-align: center;
+	font-family: "Courier New", Times, monospace;
+	background-image: url("./assets/number0_PNG19168.png");
+	background-repeat: repeat-x;
+	background-size: 10px 10px;
+	animation: cascade 10s infinite;
+	
+}
+
+@keyframes cascade { 
+	from {background-position: top;}
+	to {background-position: bottom;}
+}
+
+
+h1 {
+	font-size: 80px;
+	
+}
+
+.header {
+	background-color: grey;
+	margin-top: 0px;
+}
+
+#form {
+	font-size: 30px;	
+}
+
+#results{
+	font-size: 40px;	
+	font-weight: bold;
+	background-color: grey;
+}
